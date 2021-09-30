@@ -7,14 +7,14 @@ import java.util.List;
 import modelo.Alumno;
 import modelo.Pokemon;
 
-public class PokemonDAOImp implements AulaDAO {
+public class PokemonDAOImp implements PokemonDAO {
 
 	private List<Pokemon> pokemones;
-	private int numPokemones; // atributo para controlar el n�mero real de
-	// elementos que tiene nuestro almac�n
+	private int numPokemones; // atributo para controlar el numero real de
+	// elementos que tiene nuestro almacen
 
 	/**
-	 * Constructor del Almac�n con un determinado tamano
+	 * Constructor del Almacen con un determinado tamano
 	 * 
 	 * @param tamano
 	 */
@@ -24,44 +24,51 @@ public class PokemonDAOImp implements AulaDAO {
 	}
 
 	@Override
-	public boolean estaVacio() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	public boolean estaVacio(){
+    return false;
+  }
 
 	@Override
-	public boolean estaLLeno() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	public boolean estaLLeno(){
+    return false;
+  }
+
 
 	@Override
-	public void add(Alumno alumno) {
-		// TODO Auto-generated method stub
+	public void add(Pokemon pokemon) {
 
-	}
+  }
 
-	@Override
-	public boolean eliminar(Alumno alumno) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
-	public void informacionAlumnos() {
-		// TODO Auto-generated method stub
+  @Override
+	public boolean eliminar(Pokemon pokemon){
+    return false;
+  }
 
-	}
 
 	@Override
-	public void escribeAlumnos(Path ruta) {
-		// TODO Auto-generated method stub
+	public void escribirPokemon(String ruta, String name, int life, int atack, int defense, int specialAttack, int specialdefense, int speed){
 
-	}
-
+  }
+	
+	
 	@Override
-	public void leeAlumnos(Path ruta) {
-		// TODO Auto-generated method stub
+	public void imprimirPokemon (String ruta){
 
-	}
+  }
+	
+	@Override
+	public void escribirPokemon(String ruta, Pokemon pokemon){
+
+  }
+	
+	@Override
+	public List<Pokemon> leerPokemon(String ruta){
+    return null;
+  }
+
+  @Override
+	public List<Pokemon> leerPokemon(String ruta, String nombre){
+    return null;
+  }
 }

@@ -1,6 +1,5 @@
 package dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import modelo.Pokemon;
@@ -67,12 +66,6 @@ public interface PokemonDAO {
 	 */	
 	public void imprimirPokemon (String ruta);
 	
-	/**
-	 *  guarda en un fichero dado números en coma flotante, 
-	 *  si el fichero no existe lo creará, si el fichero existe lo añadirá al final.
-	 * @param numeroDecimal
-	 * @param ruta
-	 */
 	
 	/**
 	 * escribe en un fichero objetos pokemon	 *
@@ -99,13 +92,7 @@ public interface PokemonDAO {
 	 */
 	public List<Pokemon> leerPokemon(String ruta, String nombre);
 	
-	public void escribirFlotante (float numeroDecimal, String ruta);
 	
-	/**
-	 * imprime en la consola  el contenido de un fichero binario de números 
-	 * en coma flotante.
-	 * @param ruta
-	 */
 
 	
 }
