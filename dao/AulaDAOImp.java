@@ -21,8 +21,7 @@ import modelo.Alumno;
  */
 public class AulaDAOImp implements AulaDAO{
 	private List<Alumno> alumnos;
-	private int numalumnos; // atributo para controlar el número real de
-							// elementos que tiene nuestro almacén
+	private int tamano; // atributo para controlar el tamano del almacén
 
 	/**
 	 * Constructor del Almacén con un determinado tamano
@@ -31,7 +30,7 @@ public class AulaDAOImp implements AulaDAO{
 	 */
 	public AulaDAOImp(int tamano) {
 		alumnos = new ArrayList<Alumno>(tamano);
-		numalumnos = tamano;
+		this.tamano = tamano;
 
 	}
 

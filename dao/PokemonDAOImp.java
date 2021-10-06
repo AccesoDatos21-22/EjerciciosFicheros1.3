@@ -10,8 +10,7 @@ import modelo.Pokemon;
 public class PokemonDAOImp implements PokemonDAO {
 
 	private List<Pokemon> pokemones;
-	private int numPokemones; // atributo para controlar el numero real de
-	// elementos que tiene nuestro almacen
+	private int numPokemones; // atributo para controlar el tamano del almacen
 
 	/**
 	 * Constructor del Almacen con un determinado tamano
